@@ -6,6 +6,7 @@ import {
   addUserToLocalStorage,
   removeUserFromLocalStorage,
 } from '../utiles/localStorage'
+import { clearValues } from './job/jobSlice'
 
 const initialState = {
   isLoading: false,
@@ -55,6 +56,19 @@ export const updateUser = createAsyncThunk(
     }
   }
 )
+
+export const clearStoreAllJobs = async (message, thunkAPI) => {
+  try {
+    thunkAPI.dispatch(logoutUser(message))
+    thunkAPI.dispatch(clearStore())
+    thunkAPI.dispatch(clearValues())
+    return Promise.resolve()
+  } catch (error) {
+    return Promise.reject()
+  }
+}
+
+export const clearStore = createAsyncThunk('user/clearStore', clearStoreAllJobs)
 
 const userSlice = createSlice({
   name: 'user',

@@ -13,6 +13,7 @@ import ChartsContainer from './ChartsContainer'
 import Loading from './Loading'
 import BarChat from './BarChart'
 import AreaChat from './AreaChart'
+import PageBtnContainer from './PageBtnContainer'
 export {
   Logo,
   Formrow,
@@ -29,4 +30,5 @@ export {
   Loading,
   BarChat,
   AreaChat,
+  PageBtnContainer,
 }

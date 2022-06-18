@@ -7,6 +7,12 @@ import FormRowSelect from './FormRowSelect'
 import SearchContainer from './SearchContainer'
 import Job from './Job'
 import JobsContainer from './JobsContainer'
+import StatItem from './StatItem'
+import StatsContainer from './StatsContainer'
+import ChartsContainer from './ChartsContainer'
+import Loading from './Loading'
+import BarChat from './BarChart'
+import AreaChat from './AreaChart'
 export {
   Logo,
   Formrow,
@@ -17,4 +23,10 @@ export {
   SearchContainer,
   Job,
   JobsContainer,
+  StatsContainer,
+  StatItem,
+  ChartsContainer,
+  Loading,
+  BarChat,
+  AreaChat,
 }
